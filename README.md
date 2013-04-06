@@ -1,7 +1,19 @@
 Fever on Heroku Bootstrap
 =========================
-
 A bootstrap script to start Fever on Heroku
+
+
+Why
+=========================
+As you all may know, Google announced that their RSS agregator service, Google Reader going to shut down.
+To me this is really sad news becuase I relied on Google Reader and Reeder for iOS. Just after hearing the news I've been looking for good substitute, then finally I found Fever (http://feedafever.com/)
+
+Although Fever has a nice feature that it automatically picks up hot news, it requires your own server.
+Even though many people can have their own server today, it's a little more difficult than just using other hosting services.
+
+However Justin Morris wrote up whole instruction to set up Fever on Heroku platform so that you don't have to have your own servers.
+
+Based on his instruction, I wrote a tiny script to boot up your own Fever service on Heroku.
 
 
 Requirement
