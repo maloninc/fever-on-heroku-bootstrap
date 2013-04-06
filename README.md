@@ -6,13 +6,14 @@ A bootstrap script to start Fever on Heroku
 
 Requirement
 =========================
+* Paypal account (http://paypal.com)
 * Fever account (http://feedafever.com)
-* Heroku Account (http://heroku.com)
+* Heroku account (http://heroku.com)
 
 
 How
 =========================
-1. Run bootstrap script.
+Step 1: Run bootstrap script.
 
     curl -O https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/bootstrap.sh; sh bootstrap.sh
 
@@ -20,12 +21,12 @@ or
 
 Download and run this simple script.
 
-2. After running the script, you will see your browser opening your own Fever site as the following
+Step 2: After running the script, you will see your browser opening your own Fever site as the following
 ![001](https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/images/001.png)
 
-3. Click "proceed regardless"
+Step 3: Click "proceed regardless"
 
-4. Enter MySQL database credential.
+Step 4: Enter MySQL database credential.
 ![002](https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/images/002.png)
 
     Here is MySQL database credential
@@ -41,26 +42,26 @@ Download and run this simple script.
 
 NOTE: "path" is the database name, just leave out the / at the start
 
-5. Purchase Fever license and enter an activation key from Fever site.
+Step 5: Purchase Fever license and enter an activation key from Fever site.
 ![003](https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/images/003.png)
 
-6. Create login.
+Step 6: Create login.
 ![004](https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/images/004.png)
 
-7. Click "choose opml" to import your OPML if you need.
+Step 7: Click "choose opml" to import your OPML if you need.
 ![005](https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/images/005.png)
 
-8. To set up automatic refresh, run the following command. It will open Heroku Scheduler website.
+Step 8: To set up automatic refresh, run the following command. It will open Heroku Scheduler website.
 
     heroku addons:open scheduler
 
-9. Then enter the following command to the command field.
+Step 9: Then enter the following command to the command field.
 
 ![006](https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/images/006.png)
 
     curl -L -s http://YOUR_HEROKU_APP/fever/?refresh
 
-10. Now you have your own RSS server.
+Step 10: Now you have your own RSS server.
 
 
 Special Thanks
