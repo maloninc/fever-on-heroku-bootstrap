@@ -55,6 +55,7 @@ NOTE: "path" is the database name, just leave out the / at the start
 **Step 6: Create login.**
 
 Enter your e-mail address and password to login to your own RSS server. You can chose your favorite temperature scale from Celsius and Fahrenheit.
+
 ![004](https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/images/004.png)
 
 
