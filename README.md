@@ -38,10 +38,10 @@ Download and run this simple script.
     Array
     (
         [scheme] => mysql
-        [host] => us-cdbr-east-03.cleardb.com
-        [user] => bb1a3dddfc628f
-        [pass] => 8948adb7
-        [path] => /heroku_cd8fbaee8da6b67
+        [host] => us-cdbr-example-00.cleardb.com
+        [user] => aabbccddeeff
+        [pass] => ppaasswwoorrdd
+        [path] => /heroku_aaabbbcccddd
         [query] => reconnect=true_
     )
 
@@ -54,6 +54,7 @@ NOTE: "path" is the database name, just leave out the / at the start
 
 **Step 6: Create login.**
 
+Enter your e-mail address and password to login to your own RSS server. You can chose your favorite temperature scale from Celsius and Fahrenheit.
 ![004](https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/images/004.png)
 
 
