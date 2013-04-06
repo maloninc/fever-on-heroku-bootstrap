@@ -27,12 +27,14 @@ Download and run this simple script.
 ![001](https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/images/001.png)
 
 
-#### Step 3: Click "proceed regardless"
+#### Step 3: Click "proceed regardless".
 
 
 #### Step 4: Enter MySQL database credential.
 
 ![002](https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/images/002.png)
+
+You will see the following information just right after running the script.
 
     Here is MySQL database credential
     Array
