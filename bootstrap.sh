@@ -12,7 +12,6 @@ git init .
 curl -s -O http://feedafever.com/gateway/public/fever.zip
 unzip -q fever.zip -d . && rm fever.zip
 echo '<meta http-equiv="refresh" content="3;URL=/fever/boot.php">' > index.php
-#touch index.php
 
 # First commit
 git add -A .

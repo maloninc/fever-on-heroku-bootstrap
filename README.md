@@ -26,9 +26,7 @@ Download and run this simple script.
 3. Click "proceed regardless"
 
 4. Enter MySQL database credential.
-
 ![002](https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/images/002.png)
-
 
     Here is MySQL database credential
     Array
@@ -44,15 +42,12 @@ Download and run this simple script.
 NOTE: "path" is the database name, just leave out the / at the start
 
 5. Purchase Fever license and enter an activation key from Fever site.
-
 ![003](https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/images/003.png)
 
 6. Create login.
-
 ![004](https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/images/004.png)
 
 7. Click "choose opml" to import your OPML if you need.
-
 ![005](https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/images/005.png)
 
 8. To set up automatic refresh, run the following command. It will open Heroku Scheduler website.
