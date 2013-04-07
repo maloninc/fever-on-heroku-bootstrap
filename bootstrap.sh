@@ -31,7 +31,29 @@ git push heroku master
 echo ""
 echo ""
 echo "Here is MySQL database credential"
+echo "========================================"
 heroku config | grep CLEARDB_DATABASE_URL | cut -d " " -f2 | php -r '$conn=""; $in=fopen("php://stdin", "r"); while(!feof($in)){ $conn=$conn . fgets($in, 4096); } print_r(parse_url($conn));'
+echo "========================================"
+
+
+# Show extras
+echo ""
+echo ""
+echo "==== Extras ===="
+echo ""
+echo "[Automatic Refresh]"
+echo "To set up automatic refresh, run the following command. It will open Heroku Scheduler website."
+echo ""
+echo "    heroku addons:open scheduler"
+echo ""
+echo "Then enter the following command to the command field."
+echo ""
+echo "    curl -L -s http://YOUR_HEROKU_APP/fever/?refresh"
+echo ""
+echo "[Item Expiration]"
+echo "Becuase MySQL addon ClearDB which your Fever used has a limitation of 5MB storage, you should change item expiration to 2 weeks."
+echo ""
+echo ""
 
 # Open launch page
 heroku open
