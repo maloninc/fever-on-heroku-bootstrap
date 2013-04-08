@@ -49,15 +49,12 @@ Download and run this simple script.
 You will see the following information just right after running the script.
 
     Here is MySQL database credential
-    Array
-    (
-        [scheme] => mysql
-        [host] => us-cdbr-example-00.cleardb.com
-        [user] => aabbccddeeff
-        [pass] => ppaasswwoorrdd
-        [path] => /heroku_aaabbbcccddd
-        [query] => reconnect=true_
-    )
+    ========================================
+    HOST: instance43284.db.xeround.com:8758
+    NAME: app14701886
+    USERNAME: app14701886
+    PASSWORD: dDwcUSfy
+    ========================================
 
 NOTE: "path" is the database name, just leave out the / at the start
 

@@ -22,17 +22,23 @@ echo ""
 echo ""
 heroku login
 heroku create ${APP_NAME} -s cedar -b git://github.com/iphoting/heroku-buildpack-php-tyler.git
-heroku addons:add cleardb:ignite
+heroku addons:add xeround:starter
 heroku addons:add scheduler:standard
 git push heroku master
 
+
+/bin/echo -n "Waiting for deploying MySQL DB..."
+while [ `heroku config | grep -c XEROUND_DATABASE_HOST` = 0 ]
+do
+  /bin/echo -n '.'
+done
 
 # Show Database Info
 echo ""
 echo ""
 echo "Here is MySQL database credential"
 echo "========================================"
-heroku config | grep CLEARDB_DATABASE_URL | cut -d " " -f2 | php -r '$conn=""; $in=fopen("php://stdin", "r"); while(!feof($in)){ $conn=$conn . fgets($in, 4096); } print_r(parse_url($conn));'
+heroku config | grep XEROUND_DATABASE_URL | tr '@' ':' | tr '/' ':'| awk -F: '{gsub("\.$",":",$7); print("HOST: " $7 $8 "\nNAME: " $9 "\nUSERNAME: " $5 "\nPASSWORD: " $6) }'
 echo "========================================"
 
 
