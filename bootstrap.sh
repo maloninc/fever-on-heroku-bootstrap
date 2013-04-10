@@ -42,12 +42,12 @@ heroku config | grep XEROUND_DATABASE_URL | tr '@' ':' | tr '/' ':'| awk -F: '{g
 echo "========================================"
 
 
-# Show extras
+# Show additional actions
 echo ""
 echo ""
-echo "==== Extras ===="
+echo "==== Additional actions ===="
 echo ""
-echo "[Automatic Refresh]"
+echo "[Setup Automatic Refresh]"
 echo "To set up automatic refresh, run the following command. It will open Heroku Scheduler website."
 echo ""
 echo "    heroku addons:open scheduler"
@@ -56,9 +56,14 @@ echo "Then enter the following command to the command field."
 echo ""
 echo "    curl -L -s http://YOUR_HEROKU_APP/fever/?refresh"
 echo ""
-echo "[Item Expiration]"
-echo "Becuase MySQL addon ClearDB which your Fever used has a limitation of 5MB storage, you should change item expiration to 2 weeks."
 echo ""
+echo "[Change Item Expiration]"
+echo "Becuase MySQL addon Xeround which your Fever used has a limitation of 10MB storage, you should change item expiration to 2 weeks to save the storage."
+echo ""
+echo ""
+echo "[Pinging to server]"
+echo "Becuase Heroku will restart the instance every day, causing Fever lock you out, if you aren't constantly hitting the page, "
+echo "you should setup cron in your Mac so that your Mac access the page every minute to prevent this, or using a monitoring service such as pingdom.com."
 echo ""
 
 # Open launch page
