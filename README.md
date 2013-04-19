@@ -75,17 +75,21 @@ Enter your e-mail address and password to login to your own RSS server. You can 
 ![005](https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/images/005.png)
 
 
-#### Step 8: To set up automatic refresh, run the following command. It will open Heroku Scheduler website.
+#### Step 8: To set up regular job, run the following command. It will open Heroku Scheduler website.
 
     heroku addons:open scheduler
 
 
-#### Step 9: Then enter the following command to the command field.
+#### Step 9: Then enter the following commands to the command field
 
 ![006](https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/images/006.png)
 
-    curl -L -s http://YOUR_HEROKU_APP/fever/?refresh
+    ./refresh.sh http://<YOUR-HEROKU-APP>/ <FEVER-SERIAL> <DB_SERVER_NAME> <DB_NAME> <USERNAME> <PASSWORD>
 
+    php ./purge.php <DB_SERVER_NAME> <DB_NAME> <USERNAME> <PASSWORD>"
+
+Becuase Heroku will restart the instance every day, causing Fever lock you out, refresh.sh script re-activate your Fever automatically.
+Also MySQL addon Xeround which your Fever used has a limitation of 10MB storage, as a reslution purge.php script removes old data which are 3+ days before.
 
 #### Step 10: Set up regular task not to stop Heroku process.
 
