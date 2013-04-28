@@ -50,10 +50,15 @@ You will see the following information just right after running the script.
 
     Here is MySQL database credential
     ========================================
-    HOST: instance43284.db.xeround.com:8758
-    NAME: app14701886
-    USERNAME: app14701886
-    PASSWORD: dDwcUSfy
+    Array
+    (
+        [scheme] => mysql
+        [host] => xx-xxxx-xxxx-00.cleardb.com
+        [user] => xxxxxxxxxxxxxxxx
+        [pass] => xxxx
+        [path] => heroku_xxxxxxxxxxx
+        [query] => reconnect=true_
+    )
     ========================================
 
 NOTE: "path" is the database name, just leave out the / at the start
@@ -89,7 +94,7 @@ Enter your e-mail address and password to login to your own RSS server. You can 
     php ./purge.php <DB_SERVER_NAME> <DB_NAME> <USERNAME> <PASSWORD>"
 
 Becuase Heroku will restart the instance every day, causing Fever lock you out, refresh.sh script re-activate your Fever automatically.
-Also MySQL addon Xeround which your Fever used has a limitation of 10MB storage, as a reslution purge.php script removes old data which are 3+ days before.
+Also MySQL addon ClearDB which your Fever used has a limitation of 5MB storage, as a reslution purge.php script removes old data which are 2+ days before.
 
 #### Step 10: Set up regular task not to stop Heroku process.
 
