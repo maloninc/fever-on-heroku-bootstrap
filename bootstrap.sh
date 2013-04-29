@@ -13,9 +13,13 @@ curl -s -O http://feedafever.com/gateway/public/fever.zip
 unzip -q fever.zip -d . && rm fever.zip
 echo '<meta http-equiv="refresh" content="3;URL=/fever/boot.php">' > index.php
 
+# Download maintenance scripts
+curl -s -O https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/purge.php
+curl -s -O https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/refresh.sh
+
 # First commit
 git add -A .
-git commit -m "Added Fever bootstrap code, Heroku index.php"
+git commit -m "First commit."
 
 # Set up heroku app with custome build pack for PHP
 echo ""
