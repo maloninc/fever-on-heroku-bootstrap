@@ -94,9 +94,6 @@ Enter your e-mail address and password to login to your own RSS server. You can 
 Becuase Heroku will restart the instance every day, causing Fever lock you out, refresh.sh script re-activate your Fever automatically.
 Also MySQL addon ClearDB which your Fever used has a limitation of 5MB storage, as a reslution purge.php script which is called in refresh.sh removes old data which are 2+ days before.
 
-#### Step 10: Set up regular task not to stop Heroku process.
-
-Becuase Heroku will restart the instance, which cause Fever lock you out and you have to enter MySQL credential again, if you aren't constantly hitting the page, you should setup cron in your Mac so that your Mac access the page every minute to prevent this, or using a monitoring service such as pingdom.com."
 
 
 Special Thanks
