@@ -30,3 +30,5 @@ curl -s \
      ${BASE_URL}/fever/ > /dev/null
 
 curl -Ls ${BASE_URL}/fever/?refresh
+
+php ./purge.php ${DB_SERVER} ${DB_DATABASE} ${DB_USERNAME} ${DB_PASSWORD}
