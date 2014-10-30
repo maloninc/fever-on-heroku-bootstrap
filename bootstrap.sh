@@ -14,8 +14,8 @@ unzip -q fever.zip -d . && rm fever.zip
 echo '<meta http-equiv="refresh" content="3;URL=/fever/boot.php">' > index.php
 
 # Download maintenance scripts
-curl -s -O https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/purge.php
-curl -s -O https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/refresh.sh
+curl -s -O https://raw.githubusercontent.com/maloninc/fever-on-heroku-bootstrap/master/purge.php
+curl -s -O https://raw.githubusercontent.com/maloninc/fever-on-heroku-bootstrap/master/refresh.sh
 
 # First commit
 git add -A .
