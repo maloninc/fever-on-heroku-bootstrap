@@ -27,7 +27,7 @@ How
 =========================
 #### Step 1: Run bootstrap script.
 
-    curl -O https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/bootstrap.sh; sh bootstrap.sh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/maloninc/fever-on-heroku-bootstrap/master/bootstrap.sh)"
 
 or
 
