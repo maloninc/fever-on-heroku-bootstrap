@@ -56,7 +56,7 @@ echo "    heroku addons:open scheduler"
 echo ""
 echo "Then enter the following command to the command field, and configure it as per-10-miniutes job."
 echo ""
-echo "    ./refresh.sh http://<YOUR-HEROKU-APP>/ <FEVER-SERIAL> <DB_SERVER_NAME> <DB_NAME> <USERNAME> <PASSWORD>"
+echo "    ./refresh.sh http://<YOUR-HEROKU-APP>/ <FEVER-ACTIVATION-KEY> <DB_SERVER_NAME> <DB_NAME> <USERNAME> <PASSWORD>"
 echo ""
 echo ""
 
