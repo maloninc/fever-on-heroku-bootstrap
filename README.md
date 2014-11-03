@@ -27,7 +27,7 @@ How
 =========================
 #### Step 1: Run bootstrap script.
 
-    curl -O https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/bootstrap.sh; sh bootstrap.sh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/maloninc/fever-on-heroku-bootstrap/master/bootstrap.sh)"
 
 or
 
@@ -89,7 +89,7 @@ Enter your e-mail address and password to login to your own RSS server. You can 
 
 ![006](https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/images/006.png)
 
-    ./refresh.sh http://<YOUR-HEROKU-APP>/ <FEVER-SERIAL> <DB_SERVER_NAME> <DB_NAME> <USERNAME> <PASSWORD>
+    ./refresh.sh http://<YOUR-HEROKU-APP>/ <FEVER-ACTIVATION-KEY> <DB_SERVER_NAME> <DB_NAME> <USERNAME> <PASSWORD>
 
 Becuase Heroku will restart the instance every day, causing Fever lock you out, refresh.sh script re-activate your Fever automatically.
 Also MySQL addon ClearDB which your Fever used has a limitation of 5MB storage, as a reslution purge.php script which is called in refresh.sh removes old data which are 2+ days before.

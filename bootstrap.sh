@@ -14,8 +14,8 @@ unzip -q fever.zip -d . && rm fever.zip
 echo '<meta http-equiv="refresh" content="3;URL=/fever/boot.php">' > index.php
 
 # Download maintenance scripts
-curl -s -O https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/purge.php
-curl -s -O https://raw.github.com/maloninc/fever-on-heroku-bootstrap/master/refresh.sh
+curl -s -O https://raw.githubusercontent.com/maloninc/fever-on-heroku-bootstrap/master/purge.php
+curl -s -O https://raw.githubusercontent.com/maloninc/fever-on-heroku-bootstrap/master/refresh.sh
 
 # First commit
 git add -A .
@@ -56,7 +56,7 @@ echo "    heroku addons:open scheduler"
 echo ""
 echo "Then enter the following command to the command field, and configure it as per-10-miniutes job."
 echo ""
-echo "    ./refresh.sh http://<YOUR-HEROKU-APP>/ <FEVER-SERIAL> <DB_SERVER_NAME> <DB_NAME> <USERNAME> <PASSWORD>"
+echo "    ./refresh.sh http://<YOUR-HEROKU-APP>/ <FEVER-ACTIVATION-KEY> <DB_SERVER_NAME> <DB_NAME> <USERNAME> <PASSWORD>"
 echo ""
 echo ""
 
